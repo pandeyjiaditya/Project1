@@ -9,5 +9,15 @@ const randomColor = function () {
 
     return color;
 }   
+const startChangingColor = function () {
+  document.body.style.backgroundColor = randomColor();
+};
+
+const stopChangingColor = function () {
+    
+}
+
+document.querySelector('#start').addEventListener('click', startChangingColor)
+document.querySelector('#stop').addEventListener('click', stopChangingColor)
 
 console.log(randomColor())
